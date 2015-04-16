@@ -1,0 +1,13 @@
+<ul class="menu">
+  <li ng-repeat="group in groups">
+    <input type="checkbox" id="item{{$index}}" />
+    <label for="item{{$index}}">
+      <div class="toggleIcon"></div>{{group.name}}
+    </label>
+    <div class="options">
+      <ul>
+        <li ng-repeat="val in group.range">{{ val }} Item</li>
+      </ul>
+    </div>
+  </li>
+</ul>
