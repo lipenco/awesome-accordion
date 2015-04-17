@@ -8,28 +8,23 @@
     .directive('scrollto', scrollto);
 
     function scrollto($window, $timeout) {
+      var scrollPaneHeight;
 
-      var settings = {
-        container: '.menu',
-        scrollTo: angular.element(),
-        offset: 0,
-        duration: 150,
-        easing: 'swing'
-      };
-      var scrollPane = angular.element(settings.container);
-      scrollPane.css('height', $(window).height())
-      var scrollPaneHeight = scrollPane.height();
-      var isScrolling = false;
+      function init(element) {
 
+        var container = element;
+        var scrollPane = angular.element(container);
+        scrollPane.css('height', $(window).height())
+        scrollPaneHeight = scrollPane.height();
 
-      function init() {
+        var $this = $(container)
 
-        var $this = $(settings.container), self = this;
+        $timeout(function() {
+          filterViewport()
+        }, 100);
 
         $this.scroll(function(e) {
-          if (!isScrolling) {
-            openFirst()
-          }
+            filterViewport()
 
         });
 
@@ -61,7 +56,7 @@
 
       }
 
-      function openFirst() {
+      function filterViewport() {
         $('.element').find('input').prop('checked', false);
         var filtered = $('.element').filter(function( index ) {
           return elementInViewport($('.element').get(index))
@@ -72,7 +67,10 @@
       return {
         restrict: 'A',
         link: function (scope, element, attrs) {
-          init();
+          init(element);
+          $( window ).resize(function() {
+            init(element);
+          });
         }
       };
   }
