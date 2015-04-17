@@ -72,36 +72,6 @@ DESKTOP
 
 } // end of media query
 
-/*********************
-LARGE VIEWING SIZE
-*********************/
-@media only screen and (min-width: 1240px) {
 
-	// styles in 1240up.scss
-	@import "breakpoints/1240up";
-
-} // end of media query
-
-/*********************
-RETINA (2x RESOLUTION DEVICES)
-*********************/
-// @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-//        only screen and (min--moz-device-pixel-ratio: 1.5),
-//        only screen and (min-device-pixel-ratio: 1.5) {
-
-// 	// styles in 2x.scss
-// 	@import "breakpoints/2x";
-
-// } // end of media query
-
-/*********************
-PRINT STYLESHEET
-*********************/
-@media print {
-
-	// styles in print.scss
-	@import "partials/print";
-
-}
 
 @import "partials/awesomeaccordion";

@@ -95,25 +95,11 @@ a:link,a:visited:link{-webkit-tap-highlight-color:rgba(0,0,0,.3)}
 #inner-header{width:1000px}
 #logo,.main-nav{display:block}
 .hamburger,.responsive-nav{display:none}}
-@media only screen and (min-width:1240px){.container{width:1240px}}
-@media print{blockquote,img,pre,tr{page-break-inside:avoid}
-*{background:0 0!important;color:#000!important;text-shadow:none!important;filter:none!important;-ms-filter:none!important}
-a,a:visited{color:#444!important;text-decoration:underline}
-a:after,a:visited:after{content:" (" attr(href)")"}
-a abbr[title]:after,a:visited abbr[title]:after{content:" (" attr(title)")"}
-.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
-blockquote,pre{border:1px solid #999}
-thead{display:table-header-group}
-img{max-width:100%!important}
-@page{margin:.5cm}
-h2,h3,p{orphans:3;widows:3}
-h2,h3{page-break-after:avoid}
-.page-navigation,.respond-form,.sidebar,.wp-prev-next,nav{display:none}}
 @-webkit-keyframes bumpUp{20%{-webkit-transform:translateY(-4px);transform:translateY(-4px)}
 100%{-webkit-transform:none;transform:none}}
 @keyframes bumpUp{20%{-webkit-transform:translateY(-4px);transform:translateY(-4px)}
 100%{-webkit-transform:none;transform:none}}
-.menu{list-style:none;padding:0;margin:3em 1em;width:300px;color:#242C35}
+.menu{list-style:none;padding:.5em;width:300px;color:#242C35;overflow:hidden;background-color:#242C35;background-image:-webkit-radial-gradient(top,circle cover,#3c3b52 0,#242c35 80%);background-image:radial-gradient(top,circle cover,#3c3b52 0,#242c35 80%)}
 .menu>li{display:block}
 .menu>li>input{display:none}
 .menu>li>input:checked~label{box-shadow:0 0 8px rgba(0,0,0,.5);-webkit-animation:none;animation:none;-webkit-transition:.1s;transition:.1s}

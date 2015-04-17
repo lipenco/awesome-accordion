@@ -16,7 +16,7 @@
       groups = data.groups.group
       groups.map(function(object, i) {
         object.range = _.range(1, Math.floor((Math.random() * 10) + 2));
-        object.height = object.range * 35 + 50
+        object.height = parseInt(object.range.length) * 37 + 110
       })
       $scope.groups = groups
       console.log($scope.groups)

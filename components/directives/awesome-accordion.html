@@ -1,6 +1,6 @@
-<ul class="menu">
-  <li ng-repeat="group in groups">
-    <input type="checkbox" id="item{{$index}}" />
+<ul  class="menu"  scroll scrollto>
+  <li class="element{{$index}} element" data-height={{group.height}}  ng-repeat="group in groups">
+    <input type="checkbox"  id="item{{$index}}" />
     <label for="item{{$index}}">
       <div class="toggleIcon"></div>{{group.name}}
     </label>
