@@ -99,7 +99,7 @@ a:link,a:visited:link{-webkit-tap-highlight-color:rgba(0,0,0,.3)}
 100%{-webkit-transform:none;transform:none}}
 @keyframes bumpUp{20%{-webkit-transform:translateY(-4px);transform:translateY(-4px)}
 100%{-webkit-transform:none;transform:none}}
-.menu{list-style:none;padding:.5em;width:300px;color:#242C35;overflow:hidden;background-color:#242C35;background-image:-webkit-radial-gradient(top,circle cover,#3c3b52 0,#242c35 80%);background-image:radial-gradient(top,circle cover,#3c3b52 0,#242c35 80%)}
+.menu{list-style:none;padding:.5em;width:300px;color:#242C35;overflow:scroll;background-image:-webkit-radial-gradient(top,circle cover,#3c3b52 0,#242c35 80%);background-image:radial-gradient(top,circle cover,#3c3b52 0,#242c35 80%)}
 .menu>li{display:block}
 .menu>li>input{display:none}
 .menu>li>input:checked~label{box-shadow:0 0 8px rgba(0,0,0,.5);-webkit-animation:none;animation:none;-webkit-transition:.1s;transition:.1s}

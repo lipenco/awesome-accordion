@@ -25,9 +25,9 @@
   width: 300px;
   color: #242C35;
   overflow: scroll;
-  background-color: #242C35;
-background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #242c35 80%);
-background-image: radial-gradient(top, circle cover, #3c3b52 0%, #242c35 80%);
+  // background-color: #242C35;
+  background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #242c35 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #242c35 80%);
 }
 
 .menu > li {
